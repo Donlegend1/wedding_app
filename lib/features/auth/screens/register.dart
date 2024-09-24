@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
@@ -90,8 +91,7 @@ class _RegisterState extends State<Register> {
               const SizedBox(height: 20),
               TextButton(
                 onPressed: () {
-                  // Handle "Already have an account?" logic here
-                  // Typically, this would navigate to the login screen
+                  GoRouter.of(context).go("/login");
                 },
                 child: const Text('Already have an account? Login'),
               ),

@@ -13,7 +13,9 @@ import 'package:my_flutter_app/features/gallery/screens/gallery.dart';
 final router = GoRouter(initialLocation: "/", routes: [
   GoRoute(
     path: '/',
-    builder: (context, state) => const Intro(),
+    builder: (context, state) => const MyHomePage(
+      title: "Homepage",
+    ),
     routes: [
       GoRoute(
         path: 'login',
